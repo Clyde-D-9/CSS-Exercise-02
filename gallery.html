@@ -2,8 +2,10 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, intial scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Dynamic Image Gallery</title>
+
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -13,200 +15,201 @@
     </header>
 
     <main class="container">
-            <div class="filter-container">
-                <button class="filter-btn active" data-filter="all">All</button>
-                <button class="filter-btn" data-filter="architecture">Architecture</button>
-                <button class="filter-btn" data-filter="landscapes">Landscapes</button>
-                <button class="filter-btn" data-filter="portraits">Portraits</button>
-            </div>
+
+            <input type="radio" name="filter" id="all" checked>
+            <input type="radio" name="filter" id="architecture">
+            <input type="radio" name="filter" id="landscapes">
+            <input type="radio" name="filter" id="portraits">
+
+        <div class="filter-container">
+
+            <label for="all" class="filter-btn">All</label>
+            <label for="architecture" class="filter-btn">Architecture</label>
+            <label for="landscapes" class="filter-btn">Landscapes</label>
+            <label for="portraits" class="filter-btn">Portraits</label>
+
+        </div>
 
         <div class="gallery-grid">
 
-        <div class="gallery-card" data-category="architecture">
+        <div class="gallery-card architecture-card">
             <div class="card-inner">
-                <img src="">
+
+                <img src="https://www.rome.info/wp-content/uploads/f-pantheon.jpg">
                 <span class="category-tag">Architecture</span>
                     <div class="card-content">
                         <h3 class="card-title">The Pantheon</h3>
                     </div>
+
                     <div class="overlay">
                         <p>An amazing view of classical and historical monument known as the Pantheon.</p>
                     </div>
             </div>
         </div>
-        </div>
 
-        <div class="gallery-grid">
-
-        <div class="gallery-card" data-category="landscapes">
+        <div class="gallery-card landscape-card">
             <div class="card-inner">
-                <img src="">
+
+                <img src="https://media.istockphoto.com/id/2210258727/photo/arctic-symphony-dancing-lights-over-northern-norway.jpg?s=612x612&w=0&k=20&c=yDIzBFqzOwWn06QL_t4O1cj4hWtXLqAmWLKfkqgjqCw=">
                 <span class="category-tag">Landscapes</span>
+
                     <div class="card-content">
                         <h3 class="card-title">The Northern Lights</h3>
                     </div>
+
                     <div class="overlay">
                         <p>A stunning view of the phenomena known as the Northern Lights.</p>
                     </div>
             </div>
         </div>
-        </div>
 
-        <div class="gallery-grid">
-
-        <div class="gallery-card" data-category="portraits">
+        <div class="gallery-card portrait-card">
             <div class="card-inner">
-                <img src="">
+
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqAcb-xH6m5SYk3eDM0607AJkPowH-kipIk4euGFZUOu9M3ehZwzpRKjF2&s=10">
                 <span class="category-tag">Portraits</span>
                     <div class="card-content">
                         <h3 class="card-title">Portrait of woman</h3>
                     </div>
+
                     <div class="overlay">
-                        <p>A striking photograph of a woman.</p>
+                        <p>A striking photograph capturing the natural beauty of a woman.</p>
                     </div>
             </div>
         </div>
-        </div>
 
-        <div class="gallery-grid">
-
-        <div class="gallery-card" data-category="architecture">
+        <div class="gallery-card architecture-card">
              <div class="card-inner">
-                <img src="">
+
+                <img src="https://cdn.mos.cms.futurecdn.net/BiNbcY5fXy9Lra47jqHKGK-1920-80.jpg">
                 <span class="category-tag">Architecture</span>
                     <div class="card-content">
                         <h3 class="card-title">The Colossseum</h3>
                     </div>
+
                     <div class="overlay">
                         <p>An up and close look of the famously known Colossseum situated in Rome.</p>
                     </div>
             </div>
         </div>
-        </div>
-
-        <div class="gallery-grid">
         
-            <div class="gallery-card" data-category="landscapes">
+            <div class="gallery-card landscape-card">
             <div class="card-inner">
-                <img src="">
+
+                <img src="https://image.jimcdn.com/app/cms/image/transf/dimension=1190x10000:format=jpg/path/sa6549607c78f5c11/image/i99f8337d8b45824a/version/1490356183/most-beautiful-landscapes-in-europe-plitvice-lakes-copyright-marta-paniti-european-best-destinations.jpg">
                 <span class="category-tag">Landscapes</span>
                     <div class="card-content">
-                        <h3 class="card-title"></h3>
+                        <h3 class="card-title">A gorgeous landscape in the regions of Europe.</h3>
                     </div>
+
                     <div class="overlay">
                         <p></p>
                     </div>
             </div>
             </div>
-        </div>
-
-        <div class="gallery-grid">
         
-            <div class="gallery-card" data-category="portraits">
+            <div class="gallery-card portrait-card">
             <div class="card-inner">
-                <img src="">
+
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLPzxwkd3yCR8La64j4NBz00dGvxcKqC7-NBfYP97swLSDABj62_UaeLQ&s=10">
                 <span class="category-tag">Portraits</span>
                     <div class="card-content">
-                        <h3 class="card-title"></h3>
+                        <h3 class="card-title">Woman looking into the distance</h3>
                     </div>
-                    <div class="overlay">
-                        <p></p>
-                    </div>
-            </div>
-            </div>
-        </div>
 
-        <div class="gallery-grid">
+                    <div class="overlay">
+                        <p>Woman looks into the distance as the camera focuses on her.</p>
+                    </div>
+            </div>
+            </div>
         
-            <div class="gallery-card" data-category="architecture">
+
+
+            <div class="gallery-card architecture-card">
             <div class="card-inner">
-                <img src="">
+
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHjgm1LCTei6b3BFUT7liO65Aljc03cgjjSGs7VeDSy58_qcAC-qANYzc&s=10">
                 <span class="category-tag">Architecture</span>
                     <div class="card-content">
                         <h3 class="card-title">The Sydney Opera House</h3>
                     </div>
+
                     <div class="overlay">
-                        <p></p>
+                        <p>The iconic opera house of Sydney, Austrailia.</p>
                     </div>
             </div>
             </div>
-        </div>
-
-        <div class="gallery-grid">
         
-            <div class="gallery-card" data-category="landscapes">
+            <div class="gallery-card landscape-card">
             <div class="card-inner">
-                <img src="">
+
+                <img src="https://www.worldphoto.org/sites/default/files/%C2%A9%20Francisco%20Negroni%2C%20Chile%2C%20entry%2C%20Open%20Competition%2C%20Landscape%2C%202025%20Sony%20World%20Photography%20Awards.jpg">
                 <span class="category-tag">Landscapes</span>
                     <div class="card-content">
                         <h3 class="card-title"></h3>
                     </div>
                     <div class="overlay">
-                        <p></p>
+                        <p>Magnificent mountains reflecting in the lake.</p>
                     </div>
             </div>
             </div>
-        </div>
-
-        <div class="gallery-grid">
         
-            <div class="gallery-card" data-category="portraits">
+            <div class="gallery-card portrait-card">
             <div class="card-inner">
-                <img src="">
+
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTA2v4SYsdUH9ZyRFYcjzoVKceZAUJqDqzKZjMALoixZnpOK0TketLBpHM&s=10">
                 <span class="category-tag">Portraits</span>
                     <div class="card-content">
                         <h3 class="card-title"></h3>
                     </div>
+
                     <div class="overlay">
-                        <p></p>
+                        <p>Young male model posing for a photo shoot.</p>
                     </div>
             </div>
             </div>
-        </div>
-
-        <div class="gallery-grid">
         
-            <div class="gallery-card" data-category="architecture">
+            <div class="gallery-card architecture-card">
             <div class="card-inner">
-                <img src="">
+
+                <img src="https://www.thoughtco.com/thmb/vvJcUTY8nfv5sUpaEZZphAaUHgY=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc():focal(2039x0:2041x2)/taj-mahal-566383005-581de0103df78cc2e8df5201.jpg">
                 <span class="category-tag">Architecture</span>
                     <div class="card-content">
                         <h3 class="card-title"></h3>
                     </div>
+
                     <div class="overlay">
-                        <p></p>
+                        <p>The ethereal beauty of the Taj Mahal.</p>
                     </div>
             </div>
             </div>
-        </div>
-
-        <div class="gallery-grid">
         
-            <div class="gallery-card" data-category="landscapes">
+            <div class="gallery-card landscape-card">
             <div class="card-inner">
-                <img src="">
+
+                <img src="https://www.muchbetteradventures.com/magazine/content/images/2021/06/Iceland-ice-caves-beautiful-landscapes.jpg">
                 <span class="category-tag">Landscapes</span>
                     <div class="card-content">
                         <h3 class="card-title"></h3>
                     </div>
+
                     <div class="overlay">
-                        <p></p>
+                        <p>The icy terrain makes for beautiful caves.</p>
                     </div>
             </div>
             </div>
-        </div>
-
-        <div class="gallery-grid">
         
-            <div class="gallery-card" data-category="portraits">
+            <div class="gallery-card portrait-card">
             <div class="card-inner">
-                <img src="">
+
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvdOgMuHCjHTA94f_cSD894ULsZsod8vfflVB_kY1RAdrYoyRwHfaQVvPv&s=10">
                 <span class="category-tag">Portraits</span>
                     <div class="card-content">
                         <h3 class="card-title"></h3>
                     </div>
+
                     <div class="overlay">
-                        <p></p>
+                        <p>Woman showcasing confidence and personality with her poses.</p>
                     </div>
             </div>
             </div>
